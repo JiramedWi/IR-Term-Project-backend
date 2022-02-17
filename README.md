@@ -18,8 +18,8 @@ You'll find the user guide and all documentation [here](https://flask-restful.re
 
 ## Example `TF` `TF-IDF` `BM25`
 
-<p align="center"><img src="example_package\data\termproject1stpage.gif" alt="First page TF, TF-IDF, and BM25"/></p>
+<p align="center"><img src="./example_package/data/termproject1stpage.gif" alt="First page TF, TF-IDF, and BM25"/></p>
 
 ## Example `Search Song`
 
-<p align="center"><img src="example_package\data\termproject2ndpage.gif" alt="Search Exact Song"/></p>
+<p align="center"><img src="./example_package/data/termproject2ndpage.gif" alt="Search Exact Song"/></p>
