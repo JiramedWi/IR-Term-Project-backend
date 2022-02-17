@@ -44,8 +44,21 @@ class Lyricsdata(Resource):
             tf = fucntion.bm25_ranking(query[0])
         else:
             notFoundScoreType()
-        return {'ranks :': tf + query}, 200
+        return tf, 200
         # return {'lyrics': "query: "+query + " , score: "+score}, 200
+class searchSong(Resource):
+    def post(self):
+        parser = reqparse.RequestParser()
+        parser.add_argument('query', required=True, type=str)
+        args = parser.parse_args()
+        query = args['query']
+
+        if (query is not None ):
+            rs = fucntion.searchExactSong(query)
+        else:
+            notFoundScoreType()
+        return rs, 200
+
 
 # class Iula(Resource):
 #     def post(self):
@@ -56,6 +69,7 @@ class Lyricsdata(Resource):
 
 # api.com/
 api.add_resource(Lyricsdata, '/query')
+api.add_resource(searchSong, '/search')
 # api.add_resource(Iula, '/iula')
 
 if __name__ == '__main__':

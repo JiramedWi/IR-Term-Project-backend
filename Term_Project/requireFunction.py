@@ -69,3 +69,12 @@ def bm25_ranking(query):
     tf = tf.drop(columns='bm25', axis=1)
     tf = tf.to_dict('record')
     return tf
+
+def searchExactSong(query):
+    df = pd.read_csv(lyrics_data)
+    # find song title
+    rs = df[df['Song'].str.contains(query)]
+    # split the word of song title and find the exact word
+    rs = rs[rs['Song'].apply(lambda s: s.split()[0]==query.split()[0])]
+    rs = rs.to_dict('record')
+    return rs

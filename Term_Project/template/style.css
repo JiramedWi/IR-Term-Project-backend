@@ -1,0 +1,88 @@
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.navigate-wrapper {
+    padding-top: 32px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navigate-wrapper a {
+    text-decoration: none;
+}
+
+form {
+    margin: 32px auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+input, select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    padding: 0 8px;
+    
+}
+
+select {
+    width: 120px;
+    height: 42px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    padding: 0 8px;
+    
+}
+
+button {
+    width: 140px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.result-wrapper {
+    margin-top: 24px;
+}
+
+.card {
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-sub-header {
+    display: flex;
+}
+
+.artist {
+    
+}
+
+.song {
+    margin-left: 16px;
+}
+
+.rank {}
+
+.lyric {}
